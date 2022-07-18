@@ -4,4 +4,4 @@ This App will automatically send Combos generated to the User's email defined by
 
 Click here to access the app
 
-image.png
+C:\Users\avnee\Desktop\combo-finder\combofinder\staticfiles\Screenshot (1211).png
