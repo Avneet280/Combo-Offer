@@ -7,13 +7,14 @@ html{
 
 body {
   margin:0;
+  background-image: url('./static/htmlbg2.jpeg');
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight:600;
   letter-spacing: 2px;
-  font-size:32px;
+  font-size:60px;
 }
 p {
   font-family: 'Lato', sans-serif;
@@ -25,8 +26,8 @@ p {
 .header {
   position:relative;
   text-align:center;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-  color:white;
+  /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
+  /* color:white; */
 }
 
 
@@ -74,7 +75,7 @@ text-decoration:none;
   position:relative;
   height:100%;
   text-align:center;
-  background-color: white;
+  /* background-color: white; */
 }
 
 /* Animation */
@@ -172,7 +173,68 @@ input[type=file]::file-selector-button {
   padding: .2em .4em;
   border-radius: .2em;
   background-color: #a29bfe;
-  transition: 1s;
+  transition: 5s; 
   align-items: center;
-  margin-left: 420px;
+  margin-left: 160px;
+}
+
+.social-menu{
+  margin-top: 49px;
+  position: sticky;
+  margin-left: 1100px;
+}
+
+.social-menu ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.social-menu ul li{
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+  font-size: 30px;
+  line-height: 60px;
+  transition: .3s;
+  color: #000;
+}
+
+.social-menu ul li .fab:hover{
+  color: #fff;
+}
+
+.social-menu ul li a{
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+  background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+  background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+  background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+  background-color: #000;
 }

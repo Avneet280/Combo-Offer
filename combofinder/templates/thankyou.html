@@ -1,13 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal</title>
-    {% load static %}
     <link rel="stylesheet" href="{% static 'style.css' %}" />
 </head>
-<body>
+<body style="background-image: url('./static/htmlbg2.jpeg')">
 
 
 <div class="header">
@@ -16,10 +16,10 @@
 <div class="inner-header flex">
 <!--Just the logo.. Don't mind this-->
 
-<h3>USER</h3>
+<h3> HELLO USER</h3>
 </div>
 
-<!--Waves Container-->
+{% comment %} <!--Waves Container-->
 <div>
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -34,7 +34,7 @@
     </g>
     </svg>
     </div>
-    <!--Waves end-->
+    <!--Waves end--> {% endcomment %}
 
     </div>
     <!--Header ends-->
@@ -44,15 +44,17 @@
         {%if result %}
 			{%if result == 99 %}
 				<!-- <h4> </h4> -->
-                <h3 style="text-align: center;margin-top: 15px;font-size: 3rem;">THANK YOU FOR GIVING US YOUR DATA</h3>
+                <h3 style="text-align: center;margin-top: 5%;font-size: 3rem;">THANK YOU FOR GIVING US YOUR DATA</h3>
                 <br>
                 <h3 style="text-align: center;margin-top: 0%;font-size: 2.5rem;">Sorry no combos Possible!!! </h3>
 			{%else%}
-                <h3 style="text-align: center;margin-top: 15px;font-size: 3rem;">THANK YOU FOR GIVING US YOUR DATA</h3>	
+                <h3 style="text-align: center;margin-top: 5%;font-size: 3rem;">THANK YOU FOR GIVING US YOUR DATA</h3>	
                 <br>
                 <h3 style="text-align: center;margin-top: 0%;font-size: 2.5rem;">Check your email! </h3>
 				<br>
-                <p style="text-align: center;font-size: 2.5rem;margin-top: 0%;">We have sent you an email containing the details of combos</p>
+                <p style="text-align: center;font-size: 2.5rem;margin-top: 2%;">We have sent you an email containing the details of combos</p>
+                <br>
+                <p style="text-align: center;font-size: 1.25rem;margin-top: 5%;color:red;">Made by Avneet <3</p>
 			{%endif%}
 		{%endif%}
 

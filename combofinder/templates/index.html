@@ -1,18 +1,28 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal</title>
     <link rel="stylesheet" href="{% static 'style.css' %}" />
+
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-image: url('./static/htmlbg2.jpeg')">
 
 <!-- Responsive Desktop/Mobile Login form considered to be used as mobile first approach--> 
 <!-- Wave animation credit: https://codepen.io/goodkatz -->
 
 <div class="header">
+
+    <div class="social-menu" >
+        <ul>
+            <li><a href="https://github.com/Avneet280" target="blank"><i class="fab fa-github"></i></i></a></li>
+            <li><a href="https://www.instagram.com/avneetkaur_iw/?hl=en" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/avneet-kaur-39a260200/" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </div>
 
 <!--Content before waves-->
 <div class="inner-header flex">
@@ -21,7 +31,7 @@
 <h3>Combo Offers</h3>
 </div>
 
-<!--Waves Container-->
+{% comment %} <!--Waves Container-->
 <div>
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -36,7 +46,7 @@
     </g>
     </svg>
     </div>
-    <!--Waves end-->
+    <!--Waves end--> {% endcomment %}
 
     </div>
     <!--Header ends-->
@@ -69,6 +79,8 @@
             click here to download sample data file
         </a>
         <button class="submit-btn" style="margin-top:30px">Submit</button>
+        <br>
+        <p style="text-align: center;font-size: 1rem;margin-top: 2%;color:red;">Made by Avneet <3</p>
     </form>
     </div>
 
